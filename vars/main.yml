@@ -1,0 +1,5 @@
+---
+google_chrome_gpg_key: https://dl.google.com/linux/linux_signing_key.pub
+google_chrome_gpg_key_fingerpint: 4CCA1EAF950CEE4AB83976DCA040830F7FAC5991
+google_chrome_rpm_repository_url: https://dl.google.com/linux/chrome/rpm/stable/x86_64
+google_chrome_apt_repository_url: deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main
