@@ -5,8 +5,11 @@ Ansible role to install Google Chrome on Linux.
 
 Requirements
 ------------
-
-gpg
+In order to avoid using the command or shell modules and break idempotence,
+this role downloads the gpg key in `/etc/apt/trusted.gpg.d/` without de-armoring it on
+Debian-based systems. The key in this format can only be used by SecureApt in
+version 1.4 or later (which appeared in stretch), as stated here.
+None
 
 Role Variables
 --------------
