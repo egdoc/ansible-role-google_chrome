@@ -1,6 +1,6 @@
 - name: Import Google Chrome gpg key
   ansible.builtin.rpm_key:
-    key: '{{ google_chrome_gpg_key }}'
+    key: '{{ google_chrome_gpg_key_url }}'
     fingerprint: '{{ google_chrome_gpg_key_fingerpint }}'
 
 - name: Ensure Google Chrome repository exists
@@ -11,4 +11,4 @@
     file: /etc/yum.repos.d/google-chrome
     enabled: true
     gpgcheck: true
-    gpgkey: '{{ google_chrome_gpg_key }}'
+    gpgkey: '{{ google_chrome_gpg_key_url }}'

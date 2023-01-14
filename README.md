@@ -11,7 +11,7 @@ gpg
 Role Variables
 --------------
 
-    google_chrome_gpg_key: https://dl.google.com/linux/linux_signing_key.pub
+    google_chrome_gpg_key_url: https://dl.google.com/linux/linux_signing_key.pub
     google_chrome_gpg_key_fingerpint: 4CCA1EAF950CEE4AB83976DCA040830F7FAC5991
 
 The Google Chrome gpg key URL and fingerprint.
