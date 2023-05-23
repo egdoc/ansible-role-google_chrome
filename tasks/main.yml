@@ -5,4 +5,4 @@
 - name: Ensure Google Chrome is installed
   ansible.builtin.package:
     name: google-chrome-stable
-    state: present
+    state: '{{ google_chrome_state }}'
