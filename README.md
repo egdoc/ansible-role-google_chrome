@@ -6,10 +6,9 @@ Ansible role to install Google Chrome on Linux.
 Requirements
 ------------
 In order to avoid using the command or shell modules and break idempotence,
-this role downloads the gpg key in `/etc/apt/trusted.gpg.d/` without de-armoring it on
+this role downloads the gpg key in `/usr/share/keyrings/` without de-armoring it on
 Debian-based systems. The key in this format can only be used by SecureApt in
 version 1.4 or later (which appeared in stretch), as stated here.
-None
 
 Role Variables
 --------------
@@ -23,7 +22,7 @@ The state of the google-chrome package.
 The Google Chrome gpg key URL and fingerprint.
 
     google_chrome_rpm_repository_url: https://dl.google.com/linux/chrome/rpm/stable/x86_64
-    google_chrome_apt_repository_url: deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main
+    google_chrome_apt_repository_url: deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome.asc] https://dl.google.com/linux/chrome/deb/ stable main
 
 The Google Chrome apt and rpm repositories URL.
 

@@ -1,7 +1,7 @@
 - name: Import Google Chrome gpg key
   ansible.builtin.get_url:
     url: '{{ google_chrome_gpg_key_url }}'
-    dest: /etc/apt/trusted.gpg.d/google-chrome.asc
+    dest: /usr/share/keyrings/google-chrome.asc
     mode: '644'
     owner: root
 
