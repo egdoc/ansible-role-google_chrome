@@ -1,0 +1,21 @@
+---
+argument_specs:
+  main:
+    short_description: Ansible role to install Google Chrome on Linux
+    description: Ansible role to install Google Chrome on Linux
+    author: Egidio Docile
+    options:
+      google_chrome_state:
+        type: str
+        choices:
+          - present
+          - absent
+      google_chrome_gpg_key_url:
+        type: str
+      google_chrome_gpg_key_fingerprint:
+        type: str
+      google_chrome_rpm_repository_url:
+        type: str
+      google_chrome_apt_repository_url:
+        type: str
+
